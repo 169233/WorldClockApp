@@ -7,11 +7,12 @@ h1 {
   color: red;
   margin: 20px 0;
   font-weight: bold;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 h2 {
   font-weight: bold;
+  font-size: 24px;
 }
 
 footer {
