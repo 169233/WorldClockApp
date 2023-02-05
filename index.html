@@ -17,51 +17,56 @@
     <div class="container">
       <h1>World Clock</h1>
       <form>
-        <select class="form-select" aria-label="Default select example">
+        <select
+          class="form-select"
+          aria-label="Default select example"
+          id="city">
           <option value="">Select a city...</option>
-          <option value="">Vancouver 🍁</option>
-          <option value="">Bangkok 👑</option>
-          <option value="">Johannesburg 💰</option>
+          <option value="America/New_York">New York 🏗️</option>
+          <option value="Pacific/Auckland">Auckland 🦘</option>
+          <option value="Europe/London">London 👑</option>
         </select>
-        <div class="row">
-          <div class="col">
-            <div class="city" id="los-angeles">
-              <h2>Log Angeles 📽️</h2>
-              <div class="date" id="date-los-angeles"></div>
+        <div class="cities">
+          <div class="row">
+            <div class="col">
+              <div class="city" id="los-angeles">
+                <h2>Log Angeles 📽️</h2>
+                <div class="date" id="date-los-angeles"></div>
+              </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="time" id="time-los-angeles"></div>
-          </div>
-          <hr />
-          <div class="col">
-            <div class="city" id="oslo">
-              <h2>Oslo 🏔️</h2>
-              <div class="date" id="oslo-date"></div>
+            <div class="col">
+              <div class="time" id="time-los-angeles"></div>
             </div>
-          </div>
-          <div class="col">
-            <div class="time" id="oslo-time"></div>
-          </div>
-          <hr />
-          <div class="col">
-            <div class="city" id="yukon">
-              <h2>Yukon 🌲</h2>
-              <div class="date" id="date-yukon"></div>
+            <hr />
+            <div class="col">
+              <div class="city" id="oslo">
+                <h2>Oslo 🏔️</h2>
+                <div class="date" id="oslo-date"></div>
+              </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="time" id="time-yukon"></div>
-          </div>
-          <hr />
-          <div class="col">
-            <div class="city" id="tokyo">
-              <h2>Tokyo 🗻</h2>
-              <div class="date" id="date-tokyo"></div>
+            <div class="col">
+              <div class="time" id="oslo-time"></div>
             </div>
-          </div>
-          <div class="col">
-            <div class="time" id="time-tokyo"></div>
+            <hr />
+            <div class="col">
+              <div class="city" id="yukon">
+                <h2>Yukon 🌲</h2>
+                <div class="date" id="date-yukon"></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="time" id="time-yukon"></div>
+            </div>
+            <hr />
+            <div class="col">
+              <div class="city" id="tokyo">
+                <h2>Tokyo 🗻</h2>
+                <div class="date" id="date-tokyo"></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="time" id="time-tokyo"></div>
+            </div>
           </div>
         </div>
       </form>

@@ -50,6 +50,33 @@ function clockTokyo(){
 }
 setInterval(clockTokyo,1000)
 
+function showUpdateCity(event){
+   let cityTimeZone = event.target.value;
+   console.log(cityTimeZone)
+   let cityName = cityTimeZone.replace("_", " ").split("/")[1]
+   let cityTime=moment().tz(cityTimeZone)
+   let citiesElement=document.querySelector(".cities")
+   citiesElement.innerHTML=`<div class="row">
+            <div class="col">
+              <div class="city">
+              <h2>${cityName}</h2>
+                <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="time">${cityTime.format("HH:mm:ss a")}</div>
+            </div>
+            <hr />
+         </div>`
+
+}
+showUpdateCity()
+setInterval(showUpdateCity,1000)
+
+let citiesSelectElement= document.querySelector("#city")
+citiesSelectElement.addEventListener("change",showUpdateCity)
+
+
 
 
    
