@@ -1,8 +1,8 @@
 function clockLosAngeles(){
     let elementLosAngeles=document.querySelector("#los-angeles")
     if (elementLosAngeles){
-    let elementDate=elementLosAngeles.querySelector(".date")
-    let elementTime=document.querySelector("#time")
+    let elementDate=document.querySelector("#date-los-angeles")
+    let elementTime=document.querySelector("#time-los-angeles")
     let elementAmerica=moment().tz("America/Los_Angeles")
 
   elementDate.innerHTML=elementAmerica.format("MMMM Do YYYY")
