@@ -52,7 +52,9 @@ setInterval(clockTokyo,1000)
 
 function showUpdateCity(event){
    let cityTimeZone = event.target.value;
-   console.log(cityTimeZone)
+   if(cityTimeZone==="current"){
+    cityTimeZone=moment.tz.guess()
+   }
    let cityName = cityTimeZone.replace("_", " ").split("/")[1]
    let cityTime=moment().tz(cityTimeZone)
    let citiesElement=document.querySelector(".cities")
@@ -73,7 +75,7 @@ function showUpdateCity(event){
 showUpdateCity()
 setInterval(showUpdateCity,1000)
 
-let citiesSelectElement= document.querySelector("#city")
+let citiesSelectElement= document.querySelector(".form-select")
 citiesSelectElement.addEventListener("change",showUpdateCity)
 
 
