@@ -69,10 +69,3 @@ a {
 .date {
   opacity: 0.6;
 }
-
-.beforeAfterNoon {
-  font-size: 10px;
-  color: hsl(0, 0%, 60%);
-  font-weight: normal;
-  vertical-align: middle;
-}
