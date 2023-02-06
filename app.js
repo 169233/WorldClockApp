@@ -50,6 +50,10 @@ function clockTokyo(){
 }
 setInterval(clockTokyo,1000)
 
+
+let citiesSelectElement= document.querySelector("#selectCity")
+citiesSelectElement.addEventListener("change",showUpdateCity)
+
 function showUpdateCity(event){
    let cityTimeZone = event.target.value
    if(cityTimeZone==="current"){
@@ -72,11 +76,11 @@ function showUpdateCity(event){
          </div>
          <a href="/">All cities</a>`
 }
+
 showUpdateCity()
 setInterval(showUpdateCity,1000)
 
-let citiesSelectElement= document.querySelector("#selectCity")
-citiesSelectElement.addEventListener("change",showUpdateCity)
+
 
 
 
